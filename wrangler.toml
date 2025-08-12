@@ -1,0 +1,17 @@
+"$schema" = "node_modules/wrangler/config-schema.json"
+name = "nextchat"
+main = ".open-next/worker.js"
+compatibility_date = "2025-08-07"
+compatibility_flags = ["nodejs_compat"]
+keep_vars = true
+workers_dev = true
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+[placement]
+mode = "smart"
+
+[observability.logs]
+enabled = true

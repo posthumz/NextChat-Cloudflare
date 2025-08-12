@@ -1,0 +1,23 @@
+{
+  "name": "nextchat-cloudflare",
+  "workspaces": [
+    "NextChat"
+  ],
+  "private": "true",
+  "packageManager": "yarn@1.22.19",
+  "dependencies": {
+    "@opennextjs/cloudflare": "^1.6.5"
+  },
+  "devDependencies": {
+    "wrangler": "^4.28.1"
+  },
+  "scripts": {
+    "preinstall": "bash preinstall.sh",
+    "prebuild": "bash prebuild.sh",
+    "build": "yarn workspace nextchat run opennextjs-cloudflare build",
+    "postbuild": "bash postbuild.sh",
+    "preview": "yarn workspace nextchat run opennextjs-cloudflare preview",
+    "deploy": "yarn workspace nextchat run opennextjs-cloudflare deploy",
+    "upload": "yarn workspace nextchat run opennextjs-cloudflare upload"
+  }
+}
