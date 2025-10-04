@@ -15,7 +15,6 @@
     "preinstall": "bash preinstall.sh",
     "prebuild": "bash prebuild.sh",
     "build": "yarn workspace nextchat run opennextjs-cloudflare build",
-    "postbuild": "bash postbuild.sh",
     "preview": "yarn workspace nextchat run opennextjs-cloudflare preview",
     "deploy": "yarn workspace nextchat run opennextjs-cloudflare deploy",
     "upload": "yarn workspace nextchat run opennextjs-cloudflare upload"
